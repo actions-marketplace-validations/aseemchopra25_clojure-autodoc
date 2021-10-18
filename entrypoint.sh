@@ -38,6 +38,6 @@ wget -O autodoc.jar https://github.com/downloads/tomfaulhaber/autodoc/autodoc-0.
 sha256sum autodoc.jar 
 echo "6035c1e1c142e6c24b23ecc107168f47dc068bc973e4fc1cf30be489617a22e0"
 # Generating Clojure Documentation
-java -jar autodoc.jar --source-path $1
+java -jar autodoc.jar --source-path $1 --root $2
 # Exiting
 exit 0

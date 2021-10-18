@@ -1,11 +1,11 @@
-name: 'AutoDoc CLJ/S Action'
-description: 'Generate documentation on a CLJ/S project using AutoDoc'
+name: 'AutoDoc CLJ Action'
+description: 'Generate documentation on a CLJ project using AutoDoc'
 branding: 
   icon: 'book-open'
   color: 'gray-dark'
 inputs: 
   source-path:
-    description: 'Path to Clojure/Script Code Source'
+    description: 'Path to Clojure Code Source'
     required: false
     default: './src'
   working-directory: 

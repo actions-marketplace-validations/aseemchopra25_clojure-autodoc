@@ -4,7 +4,7 @@ This Github Action will generate documentation from Clojure source directory rec
 ## Inputs:
 
 ### source-path 
-- Optional, Path of Clojure/Script Code Directory
+- Optional, Path of Clojure Code Directory
 - Default ```./src```
 
 ### working-directory
@@ -22,11 +22,11 @@ uses: aseemchopra25/clojure-autodoc@main
 ```
 uses: aseemchopra25/clojure-autodoc@main
 with:
-    source-path: ./cljs
+    source-path: ./clj
     working-directory: .
 ```
 
-### Usage - Exporting and Archiving CLJS Documentation on Pull Request at custom directory
+### Usage - Exporting and Archiving CLJ Documentation on Pull Request at custom directory
 
 ```
 name: CLJ Documentation
@@ -37,7 +37,7 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'cljs/**'
+      - 'clj/**'
 
 jobs: 
   build-documentation:
@@ -48,13 +48,13 @@ jobs:
      - name: Generate AutoDocs for CLJ(S)
        uses: aseemchopra25/clojure-autodoc@main
        with:
-          source-path: ./cljs
+          source-path: ./clj
           working-directory: .
     
      - name: Archive documentation
        uses: actions/upload-artifact@v2
        with:
-        name: cljs-documentation
+        name: clj-documentation
         path: |
           autodoc/*
 

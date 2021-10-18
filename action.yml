@@ -6,11 +6,11 @@ branding:
 inputs: 
   source-path:
     description: 'Path to Clojure/Script Code Source'
-    required: true
+    required: false
     default: './src'
   working-directory: 
     description: 'Working Directory'
-    required: true
+    required: false
     default: '.'
 runs:
   using: 'docker'

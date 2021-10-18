@@ -1,5 +1,5 @@
 # clojure-autodoc
-This Github Action will generate clojure documentation from source directory recursively.
+This Github Action will generate documentation from Clojure source directory recursively.
 
 Inspired by the works of [Tom FaulHaber](https://tomfaulhaber.github.io/autodoc/)
 

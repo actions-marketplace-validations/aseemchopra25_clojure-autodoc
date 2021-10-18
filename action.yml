@@ -1,0 +1,21 @@
+name: 'AutoDoc CLJ/S Action'
+description: 'Generate documentation on a CLJ/S project using AutoDoc'
+branding: 
+  icon: 'book-open'
+  color: 'gray-dark'
+inputs: 
+  source-path:
+    description: 'Path to Clojure/Script Code Source'
+    required: true
+    default: './src'
+  working-directory: 
+    description: 'Working Directory'
+    required: true
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - ${{ inputs.source-path}}
+  - ${{ inputs.working-directory}}
+  

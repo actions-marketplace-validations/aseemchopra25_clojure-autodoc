@@ -1,4 +1,4 @@
-name: 'AutoDoc Clojure Action'
+name: 'Clojure Documentation Action'
 description: 'Generate documentation on a CLJ project using AutoDoc'
 branding: 
   icon: 'book-open'
